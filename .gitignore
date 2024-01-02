@@ -10,4 +10,5 @@
 **/saves/
 **/results/
 **/BACKUP/
+**/wandb/
 *..DS_Store

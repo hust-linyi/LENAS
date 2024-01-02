@@ -30,8 +30,8 @@ pip install -r requirements.txt
 #### U-NAS
 1. Prepare the data and modify the data path in `config.yml`.
 ```
-cd /path_to_your_RTDosePrediction/RTDosePrediction/Src/DataPrepare<br>
-python3 prepare_OpenKBP_C3D.py
+cd /path_to_your_RTDosePrediction/RTDosePrediction/DataPrepare
+python prepare_OpenKBP_C3D.py
 ```
 2. Search the architecture.
 ```
@@ -41,12 +41,12 @@ python Main.py
 #### KDA-Net
 1. Training script (Take U-Net as an example).
 ```
-cd /path_to_your_RTDosePrediction/RTDosePrediction/Src/Unet
+cd /path_to_your_RTDosePrediction/RTDosePrediction/Unet
 python train.py --batch_size 4 --list_GPU_ids 1 0 --max_iter 80000
 ```
 2. Inference script.
 ```
-cd /path_to_your_RTDosePrediction/RTDosePrediction/Src/Unet
+cd /path_to_your_RTDosePrediction/RTDosePrediction/Unet
 python test.py --GPU_id 0
 ```
 - The prediction results are stored in `/path_to_your_RTDosePrediction/RTDosePrediction/Output/unet/Prediction`.
