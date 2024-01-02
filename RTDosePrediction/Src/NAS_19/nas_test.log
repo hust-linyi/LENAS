@@ -1,0 +1,11 @@
+==> Init trainer from YOUR_ROOT/Experiment/RTDosePrediction/Output/NAS_19/best_val_evaluation_index.pkl successfully! 
+
+
+# Start inference !
+
+
+# Start evaluation !
+
+
+Dose score is: 2.5626228
+DVH score is: 1.8031983623273735

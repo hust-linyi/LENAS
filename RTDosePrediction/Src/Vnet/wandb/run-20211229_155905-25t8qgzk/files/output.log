@@ -1,0 +1,25 @@
+
+Param size = 182.449 MB
+Start training !
+Local time: 15:59:13
+Epoch: 0, iter: -1
+    Begin lr is 0.000300000000, 0.000300000000
+                Iter            0            0.38425
+Traceback (most recent call last):
+  File "YOUR_ROOT/Code/lenas/RTDosePrediction/Src/Vnet/train.py", line 89, in <module>
+    trainer.run()
+  File "YOUR_ROOT/Code/lenas/RTDosePrediction/Src/NetworkTrainer/network_trainer.py", line 296, in run
+    self.train()
+  File "YOUR_ROOT/Code/lenas/RTDosePrediction/Src/NetworkTrainer/network_trainer.py", line 239, in train
+    loss = self.backward(output, target)
+  File "YOUR_ROOT/Code/lenas/RTDosePrediction/Src/NetworkTrainer/network_trainer.py", line 210, in backward
+    self.setting.optimizer.step()
+  File "YOUR_ROOT/anaconda3/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 67, in wrapper
+    return wrapped(*args, **kwargs)
+  File "YOUR_ROOT/anaconda3/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "YOUR_ROOT/anaconda3/lib/python3.9/site-packages/torch/optim/adam.py", line 108, in step
+    F.adam(params_with_grad,
+  File "YOUR_ROOT/anaconda3/lib/python3.9/site-packages/torch/optim/functional.py", line 87, in adam
+    exp_avg_sq.mul_(beta2).addcmul_(grad, grad, value=1 - beta2)
+KeyboardInterrupt

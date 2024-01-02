@@ -1,0 +1,29 @@
+{
+    "os": "Linux-5.11.0-43-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2021-12-29T07:59:44.912170",
+    "startedAt": "2021-12-29T07:59:43.812032",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 4,
+    "cpu_count": 96,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "4",
+        "--list_GPU_ids",
+        "0"
+    ],
+    "state": "running",
+    "program": "YOUR_ROOT/Code/lenas/RTDosePrediction/Src/Vnet/train.py",
+    "codePath": "RTDosePrediction/Src/Vnet/train.py",
+    "git": {
+        "remote": "git@github.com:ian-hkust-debug/lenas.git",
+        "commit": "b706f8f5d0421a065b28df0d455c8b32244dfa3d"
+    },
+    "email": null,
+    "root": "YOUR_ROOT/Code/lenas",
+    "host": "jhcpu2",
+    "username": "ylindq",
+    "executable": "YOUR_ROOT/anaconda3/bin/python"
+}

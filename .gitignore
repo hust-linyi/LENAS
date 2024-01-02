@@ -1,0 +1,12 @@
+.vscode/
+*.pkl
+*.h5
+**/data/
+**/test_trashcan/
+**/__pycache__/
+**/log/
+**/.ipynb_checkpoints/
+**/predicted/
+**/saves/
+**/results/
+**/BACKUP/

@@ -1,0 +1,51 @@
+data:
+
+  affine_file: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/affine.npy
+  batch_size_train: 1
+  batch_size_val: 1
+  cross_val_indices: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/cross_val_indices.pkl
+  img_shape:
+  - 128
+  - 128
+  - 128
+  len_testing: 100
+  len_training: 200
+  len_validation: 40
+  mean_std_file: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/mean_std.pkl
+  patch_overlap: 0
+  permute: true
+  skip_health: true
+  source_test: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/testing
+  source_train: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/training
+  source_val: YOUR_ROOT/Data/RTDosePrediction/OpenKBP_C3D/
+  spe_file: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/spe.pkl
+  testing_h5: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/testing.h5
+  training_h5: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/training.h5
+  validation_h5: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/validation.h5
+  inclusive_label: true
+  both_ps: false
+predict:
+  output_folder: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/data/predicted
+search:
+  patch_shape: 128
+  best_geno_count: 40
+  channel_change: true
+  depth: 5
+  bottleneck: 3
+  epochs: 30
+  geno_file: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log/best_genotype.pkl
+  gpu: true
+  grad_clip: 5
+  init_n_kernels: 8
+  last_save: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log/last_search.pt
+  best_shot: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log/best_search.pt
+  log_path: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log
+  multi_gpus: true
+  n_nodes: 4
+  normal_w_share: false
+train:
+  patch_shape: 128
+  init_n_kernels: 16
+  best_shot: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log/best_train.pt
+  epochs: 5000
+  last_save: YOUR_ROOT/Experiment/RTDosePrediction/U-NAS/log/last_train.pt
