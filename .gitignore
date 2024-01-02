@@ -11,4 +11,4 @@
 **/results/
 **/BACKUP/
 **/wandb/
-*.DS_Store
+**/.DS_Store
